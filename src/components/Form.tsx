@@ -23,6 +23,7 @@ function Form({method}: FormProps){
         if(method === "login"){
             const {password, ...filteredData} = data
             console.log(filteredData)
+            navigate("/home")
         }else if(method === "register"){
             await createUser(data)
             navigate("/home")
@@ -107,7 +108,7 @@ function Form({method}: FormProps){
             <button 
                 type="submit" 
                 className="form-button" 
-                //onClick={handleSubmit}
+                onClick={() => navigate("/home")}
                 >
                 {formName}
             </button>
