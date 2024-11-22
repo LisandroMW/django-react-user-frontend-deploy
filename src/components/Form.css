@@ -1,0 +1,73 @@
+body {
+    background-color: rgb(50, 50, 50);
+}
+
+.form {
+    width: 600px;
+    height: min-content;
+    background-color: rgba(146, 142, 142, 0.377);
+    display: flex;
+    margin: 0 auto;
+    padding: 70px;
+    flex-direction: column;
+    margin-top: 50px;
+    border: 3px rgba(255, 56, 56, 0.377) solid;
+    border-radius: 10px;
+
+}
+
+.form-input{
+    width: 60%;
+    color: white;
+    background-color: black;
+    height: 40px;
+    margin: 10px auto;
+    border: 2px solid rgba(255, 56, 56, 0.377);
+    border-radius: 50px;
+    transition: border-radius 0.3s ease, width 0.3s ease, height 0.3s ease; 
+    padding: 0 20px;
+    text-align: center;
+}
+.form-input:focus {
+    border-radius: 5px; /* Se convierte en una línea al enfocarse */
+    width: 80%; /* Mantener el ancho */
+    height: 40px; /* Mantener la altura */
+    outline: none; /* Elimina el contorno predeterminado */
+    border-color: rgba(255, 56, 56, 0.8); /* Cambia el color del borde al enfocarse */
+}
+
+
+.form-input::placeholder {
+    color: rgba(255, 255, 255, 0.7); /* Color del placeholder */
+    opacity: 1; /* Asegúrate de que el placeholder sea completamente visible */
+    text-align: center; /* Centra el placeholder */
+}
+
+.form-input.error {
+    border-color: red;
+}
+.form-input.success {
+    border-color: green;
+}
+
+.form-button{
+    width: 60%;
+    height: 40px;
+    margin: 10px auto;
+    color: white;
+    background-color: rgb(25, 31, 30);
+    border: 2px solid rgba(255, 56, 56, 0.377);
+    border-radius: 50px ;
+    transition: border-radius 0.3s ease, width 0.3s ease, height 0.3s ease;
+    
+}
+
+.form-button:hover{
+    background-color: rgba(255, 56, 56, 0.5); /* Cambia el color al pasar el cursor */
+    cursor: pointer;
+    border-radius: 5px; /* Se convierte en una línea al enfocarse */
+    width: 80%; /* Mantener el ancho */
+    height: 40px; /* Mantener la altura */
+    outline: none; /* Elimina el contorno predeterminado */
+    border-color: rgba(255, 56, 56, 0.8); /* Cambia el color del borde al enfocarse */
+}
